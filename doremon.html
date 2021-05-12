@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>doraemon</title>
+	<style type="text/css">
+		.body{
+			margin: 0px;
+		}
+		.main{
+			width: 1000px;
+			height: 1000px;
+			margin: auto;
+			background-color: black;
+		}
+		@keyframes abc{
+			0%,100%{
+				transform: rotate(0deg);
+			}
+			25%{
+				transform: rotate(45deg);
+			}
+			50%{
+				transform: rotate(90deg);
+			}
+			75%{
+				transform: rotate(-45deg);
+			}
+		}
+		.head{
+			width: 300px;
+			height: 300px;
+			margin: auto;
+			border-radius: 150px;
+			background-color: blue;
+			position: relative;
+
+		}
+		.left_eye{
+			width: 70px;
+			height: 70px;
+			border-radius: 35px;
+			position: relative;
+			background-color: white;
+			top: 65px;
+			left: 55px;
+		}
+		.left_eye_ball{
+			width: 40px;
+			height: 43px;
+			position: relative;
+			background-color: black;
+			border-radius: 20px;
+			top: 27px;
+			left: 15px;
+			animation: abc 3s 0s infinite alternate;
+		}
+		.right_eye{
+			width: 70px;
+			height: 70px;
+			border-radius: 35px;
+			position: relative;
+			background-color: white;
+			left: 190px;
+			bottom: 5px;
+		}
+		.right_eye_ball{
+			width: 40px;
+			height: 43px;
+			position: relative;
+			background-color: black;
+			border-radius: 20px;
+			top: 27px;
+			left: 15px;
+		}
+		.nose{
+			width: 30px;
+			height: 30px;
+			position: relative;
+			background-color: red;
+			border-radius: 15px;
+			left: 140px;
+			top: 20px;
+		}
+		.mouth{
+			width: 120px;
+			height: 60px;
+			position: relative;
+			background-color: white; 
+			border-radius: 0px 0px 60px 60px;
+			top: 40px;
+			left: 95px;
+		}
+		.tongue{
+			width: 50px;
+			height: 27px;
+			position: relative;
+			background-color: red;
+			border-radius: 0px 0px 30px 30px;
+			top: 2px;
+			left: 36px;
+		}
+		.belt{
+			width: 200px;
+			height: 30px;
+			position: relative;
+			background-color: red;
+			border-radius: 15px 15px 15px 15px;
+			left: 400px;
+			bottom: 20px;
+		}
+		.bell{
+			width: 30px;
+			height: 30px;
+			position: relative;
+			background-color: yellow;
+			border-radius: 15px;
+			left: 85px;
+		}
+		.down{
+			width: 300px;
+			height: 300px;
+			margin: auto;
+			position: relative;
+			background-color: blue;
+			border-radius: 50px;
+			bottom: 20px;
+		}
+		.pocket{
+			width: 170px;
+			height: 90px;
+			position: relative;
+			background-color: white;
+			border-radius: 0px 0px 80px 80px;
+			top: 100px;
+			left: 74px;
+		}
+		.left_hand{
+			width: 50px;
+			height: 157px;
+			position: relative;
+			background-color: blue;
+			border-radius: 20px;
+			right: 27px;
+			bottom: 55px;
+		}
+		.left_hand_finger{
+			width: 50px;
+			height: 50px;
+			position: relative;
+			background-color: white;
+			border-radius: 25px;
+			top: 125px;
+		}
+		.right_hand{
+			width: 160px;
+			background-color: blue;
+			height: 50px;
+			position: absolute;
+			border-radius: 25px;
+			bottom: 220px;
+			left: 270px;
+			animation: xyz 1s 0s infinite ease-out;
+		}
+		.right_hand_finger{
+			width: 50px;
+			height: 50px;
+			position: relative;
+			background-color: white;
+			border-radius: 25px;
+			left: 120px;
+		}
+		.left_leg{
+			width: 150px;
+			height: 80px;
+			margin: auto;
+			position: relative;
+			border-radius: 50px;
+			background-color: white;
+			bottom: 40px;
+			right: 70px;
+		}
+		.right_leg{
+			width: 150px;
+			height: 80px;
+			margin: auto;
+			position: relative;
+			border-radius: 50px;
+			background-color: white;
+			left: 81px;
+			bottom: 117px;
+		}
+		.line{
+			width: 0.1px;
+			height: 70px;
+			position: relative;
+			background-color: white;
+			border: 1px solid white;
+			left: 505px;
+			bottom: 232px;
+		}
+		.eye_lashesh{
+			width: 0.1px;
+			height: 10px;
+			position: relative;
+			background-color: white;
+		}
+		@keyframes xyz{
+			0%,100%{
+				bottom: 220px;
+				transform: rotate(0deg);
+			}
+			25%{
+				bottom: 180px;
+				transform: rotate(30deg);
+			}
+			50%{
+				transform: rotate(50deg);
+			}
+			75%{
+				bottom: 180px;
+				transform: rotate(35deg);
+			}
+
+		}
+		.mustach1{
+			width: 2px;
+			height: 70px;
+			position: relative;
+			background-color: black;
+			transform: rotate(-130deg);
+			bottom: 60px;
+			left: 50px;
+		}
+		.mustach2{
+			width: 2px;
+			height: 70px;
+			position: relative;
+			background-color: white;
+			transform: rotate(-130deg);
+			bottom: 90px;
+			left: 50px;
+		}
+
+	</style>
+</head>
+<body class="body">
+	<div class="main">
+		<div class="head">
+			<div class="left_eye">
+				<div class="left_eye_ball"></div>
+			</div>
+			<div class="right_eye">
+
+				<div class="right_eye_ball"></div>
+			</div>
+			<div class="nose"></div>
+			<div class="mouth">
+				<div class="tongue"></div>
+			</div>
+			<div class="mustach1"></div>
+			<div class="mustach2"></div>
+		</div>
+		<div class="belt">
+			<div class="bell"></div>
+		</div>
+
+		<div class="down">
+			<div class="pocket"></div>
+			<div class="left_hand">
+				<div class="left_hand_finger"></div>
+			</div>
+			<div class="right_hand">
+				<div class="right_hand_finger"></div>
+			</div>
+
+		</div>
+		<div class="left_leg"></div>
+		<div class="right_leg"></div>
+		<div class="line"></div>
+	</div>
+</body>
+</html>
+
+
